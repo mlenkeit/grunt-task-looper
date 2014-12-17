@@ -56,7 +56,7 @@ In the following example, the running `task-looper:tests` would first run `grunt
 
 Gruntfile.js:
 ```js
-'loop-task' : {
+'task-looper' : {
   options : {
     onBeforeProcessingItem : function(data) {
       grunt.log.write('Running tests with ' + data);
