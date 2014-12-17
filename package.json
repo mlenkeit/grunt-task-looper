@@ -1,0 +1,24 @@
+{
+  "name": "grunt-task-looper",
+  "version": "0.1.0",
+  "description": "Executes a list of tasks for each array element.",
+  "main": "tasks/task-looper.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlenkeit/grunt-task-looper.git"
+  },
+  "keywords": [
+    "grunt",
+    "task",
+    "loop"
+  ],
+  "author": {
+    "name": "Maximilian Lenkeit",
+    "email": "maximilian.lenkeit@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlenkeit/grunt-task-looper/issues"
+  },
+  "homepage": "https://github.com/mlenkeit/grunt-task-looper"
+}
