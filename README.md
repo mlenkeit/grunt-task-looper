@@ -58,10 +58,10 @@ Gruntfile.js:
 ```js
 'task-looper' : {
   options : {
-    onBeforeProcessingItem : function(data) {
+    onBeforeProcessingTasks : function(data) {
       grunt.log.write('Running tests with ' + data);
     },
-    onItemProcessedSuccessfully : function(data) {
+    onTasksProcessedSuccessfully : function(data) {
       grunt.log.ok();
     },
     verbose : false
