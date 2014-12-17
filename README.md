@@ -17,20 +17,20 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-task-looper');
 ```
 
-## Task "loop-task"
-_Run this task with the `grunt loop-task` command._
+## Task "task-looper"
+_Run this task with the `grunt task-looper` command._
 
 ### Options
 
-#### onBeforeProcessingItem
+#### onBeforeProcessingTasks
 Type: `Function`
 
-Callback function that is invoked before an item is processed (i.e. the corresponding tasks are executed). Receives the item as first parameter.
+Callback function that is invoked before the tasks for an array element are processed (i.e. the corresponding tasks are executed). Receives the array element as first parameter.
 
-#### onItemProcessedSuccessfully
+#### onTasksProcessedSuccessfully
 Type: `Function`
 
-Callback function that is invoked when an item is processed successfully (i.e. the corresponding tasks completed without errors). Receives the item as first parameter.
+Callback function that is invoked when the tasks for an array element are processed successfully (i.e. the corresponding tasks completed without errors). Receives the array element as first parameter.
 
 #### verbose
 Type: `Boolean`
@@ -52,7 +52,7 @@ An array of executable tasks. If an array element is a function, it receives the
 
 ### Usage examples
 
-In the following example, the running `loop-task:tests` would first run `grunt serve testrunner:a` followed by `grunt testrunner:b`. Note that these two are run in individual sub-processes.
+In the following example, the running `task-looper:tests` would first run `grunt serve testrunner:a` followed by `grunt testrunner:b`. Note that these two are run in individual sub-processes.
 
 Gruntfile.js:
 ```js
